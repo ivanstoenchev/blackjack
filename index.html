@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Blackjack Game</title>
+</head>
+
+<body>
+    <section class="bjGround">
+        <div class="score"></div>
+        <!-- <button class='btnBet' click="myBet">Make A Bet</button>
+        <button class='btnChange' click="changeFromBet">Change</button>
+
+
+        <div class="betChange">50</div>
+        <div class="betMade"></div> -->
+
+        <select class="numDeck">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+        <button class="addCards">Add Deck Of Cards</button>
+        <!-- <div class="showDeck"></div>
+        
+        <div class="dealerAddCardOnes"></div> -->
+
+        <!-- <div class="playerAddCardOnes"></div> -->
+        <div class="bjMessage"></div>
+        <div class="dCards">
+            <h3>Dealer Cards</h3>
+            <div class="dealerCards"></div>
+        </div>
+        <div class="scoreDealer">0</div>
+    </section>
+    <section class="bjGround">
+        <div class="pCards">
+            <h3>Player Cards</h3>
+            <div class="playerCards"></div>
+        </div>
+        <div class="playersScores">0</div>
+
+    </section>
+
+    <section class="bjGround">
+
+        <button class="hitAction">Hit</button>
+        <button class="standBtn">Stand</button>
+        <!-- <button class="splitBtn">Split</button> -->
+        <button class="startGame">Start</button>
+        <button class="resetBtn">Restart</button>
+    </section>
+    <script src="./script.js" type="text/javascript"></script>
+</body>
+
+</html>

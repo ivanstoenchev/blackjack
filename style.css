@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+}
+
+.bjGround {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #51504d;
+    max-width: 1200px;
+    height: 40vh;
+}
+
+.topCards {
+    display: flex;
+}
+
+.dealerCards {
+    display: flex;
+    flex-direction: row;
+}
+
+.playerCards {
+    display: flex;
+    flex-direction: row;
+}
+
+.pCard {
+    width: 200px;
+    height: 270px;
+    margin: 10px;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.pCard::before,
+.pCard::after {
+    content: attr(data-value);
+    position: absolute;
+    font-size: 35px;
+}
+
+.pCard::before {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.pCard::after {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+h3 {
+    color: rgb(255, 255, 255);
+}
+
+.playersScores,
+.scoreDealer {
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    font-size: 20px;
+}
+
+.bjMessage {
+    font-size: 40px;
+    color: azure;
+}
+
+@media screen and (max-width: 500px) {
+    .bjGround {
+        padding-bottom: 0px;
+        height: 43vh;
+    }
+
+    .pCard {
+        width: 100px;
+        height: 170px;
+        margin: 10px;
+    }
+
+    .pCard::before,
+    .pCard::after {
+        font-size: 20px;
+    }
+}
