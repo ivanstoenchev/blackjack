@@ -55,20 +55,6 @@ const CARD_WEIGHTS = {
     'K': 10,
 }
 
-function myBet(e) {
-    e.preventDefault();
-    money += 100;
-    document.querySelector('.score').innerHTML = money;
-}
-
-function changeFromBet(e) {
-    e.preventDefault();
-    moneyTake = document.querySelector('.betChange').innerHTML;
-    change = document.querySelector('.score').innerText;
-    current = change - moneyTake;
-    document.querySelector('.betMade').innerHTML = current;
-}
-
 function addDeck() {
 
     let cardPlayer = [];
